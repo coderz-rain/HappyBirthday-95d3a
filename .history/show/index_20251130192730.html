@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <link rel="icon" type="image/png" href="../src/icon.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Happy Birthday</title>
+    <title>生日快乐</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Three.js -->
@@ -594,7 +593,7 @@
 
                 if (currentState === STATE.INTRO) {
                     const angle = p.angle + time * 0.05;
-                    const r = p.radius + Math.sin(time * 0.5 + i * 0.01) * 10;
+                    const r = p.radius + Math.sin(time + i * 0.01) * 10;
                     target.x = Math.cos(angle) * r * 3;
                     target.z = Math.sin(angle) * r * 3;
                     target.y = p.baseTarget.y + Math.sin(time * 0.5 + target.x * 0.05) * 20; 
@@ -743,24 +742,20 @@
 
         // 第一页祝福语
         const wishes_part1 = [
-            "生日快乐！粉姐",
-            "",
-            "愿你的生命如这秋天的森林，",
-            "不必追逐繁盛，",
-            "只需一片落叶的从容。",
-            "每一次飘零都不是终结，",
-            "而是为了沉淀下来年更丰盈的色彩。",
-            "愿你的新岁，温润而金黄。",
-            "           —— 送给最特别的粉姐 "
+            "生日快乐！",
+            "愿你遍历山河，觉得人间值得。",
+            "愿你眼里的星星永远发亮，",
+            "心中的太阳永远滚烫。",
+            "新的一岁，请继续自由、热烈、闪闪发光！",
+            "—— 送给最特别的粉姐 "
         ];
 
         // 第二页歉意与快递
         const wishes_part2 = [
-            "Sorry粉姐，有点惭愧",
-            "因为我没拿捏准时间，还有商家发货时间晚的问题，所以今天Surprise可能来不及送到你手上。😭",
-            "真的很抱歉",
-            "",
-            "",
+            "但是我点惭愧，粉姐。",
+            "因为我没拿捏准时间，还有商家发货时间晚的问题，",
+            "今天Surprise可能来不及送到你手上，",
+            "所以真的很抱歉。",
             "快递编号：SF0250934920309",
             "你可以用这个编号去顺丰官网查一下。",
             "希望你喜欢这个小小的Surprise！🎉🎂🎈",
