@@ -71,7 +71,19 @@
 
         #blow-meter-container { position: absolute; bottom: 15%; left: 50%; transform: translateX(-50%); width: 280px; height: 12px; background: rgba(255,255,255,0.1); border-radius: 10px; overflow: hidden; opacity: 0; transition: opacity 0.5s; }
         #blow-meter-bar { height: 100%; width: 0%; background: linear-gradient(90deg, #ff9a9e 0%, #ff69b4 100%); border-radius: 10px; transition: width 0.1s linear; box-shadow: 0 0 15px #ff69b4; }
-        #blow-hint { position: absolute; bottom: 18%; width: 100%; text-align: center; font-size: 14px; color: rgba(255,255,255,0.8); text-shadow: 0 2px 4px rgba(0,0,0,0.8); opacity: 0; transition: opacity 0.5s; }
+        #blow-hint {
+            position: absolute;
+            bottom: 18%;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: rgba(255,255,255,0.8);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+            opacity: 0;
+            transition: opacity 0.5s;
+            z-index: 15;
+            font-family: 'Noto Serif SC', serif;
+        }
 
         #surprise-layer { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 80; pointer-events: none; transition: background 0.5s ease; }
         #surprise-layer.hidden { display: none !important; }
@@ -197,7 +209,7 @@
         </div>
     </div>
 
-    <div id="blow-hint"><p class="text-lg font-bold text-pink-200 mb-1">🎤 对着麦克风吹气</p><p class="text-xs text-gray-400">(如果麦克风不灵可以尝试电脑长按空格 · 手机长按屏幕)</p></div>
+    <div id="blow-hint"><p class="text-lg font-bold text-pink-300 mb-1 neon-text">🎤 对着麦克风吹气</p><p class="text-xs text-pink-200/70">(如果麦克风不灵可以尝试电脑长按空格 · 手机长按屏幕)</p></div>
     <div id="blow-meter-container"><div id="blow-meter-bar"></div></div>
 
     <div id="top-banner" class="hidden">
@@ -768,7 +780,7 @@
             "时间在此变得透明：",
             "每一次回望都不是倒退，",
             "而是为了确认自己的清澈。",
-            "           —— 送给最特别的你 "
+            "           —— 送给单单"
         ];
 
         // 第二页歉意与快递
